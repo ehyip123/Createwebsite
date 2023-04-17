@@ -5,8 +5,6 @@ from send_email import send_email
 #each py file under the pages would be a page on the website shown on the sidebar
 st.write('Leave your Message')
 
-
-
 with st.form(key="email_forms"):
     user_email = st.text_input("Your email address")
 

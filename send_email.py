@@ -8,7 +8,7 @@ def send_email(message):
     port = 465
 
     username = "pythonacount1@gmail.com"
-    password =
+    password = "ewyjxqceobgadjlf"
 
     receiver = "pythonacount1@gmail.com"
 
