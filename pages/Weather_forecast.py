@@ -37,24 +37,22 @@ if place:
             dates = [dict["dt_txt"] for dict in filtered_content]
             skyforecast = [dict["weather"][0]["main"] for dict in filtered_content]
 
-
             for i,forecast in enumerate(skyforecast):
                 if forecast == "Clouds":
                     st.image("skyimages/cloud.png", width = 115)
-                    st.write(forecast)
-                    st.write(dates[i])
+                    # put [0:-3 cos dont want the seconds of the time]
+                    st.write(f" {forecast} | {dates[i][0:-3]}" )
+
                 elif forecast == "Clear":
                     st.image("skyimages/clear.png", width=115)
-                    st.write(forecast)
-                    st.write(dates[i])
+                    st.write(f" {forecast} | {dates[i][0:-3]}")
                 elif forecast == "Rain":
                     st.image("skyimages/rain.png", width=115)
-                    st.write(forecast)
-                    st.write(dates[i])
+                    st.write(f" {forecast} | {dates[i][0:-3]}")
+
                 elif forecast == "Snow":
                     st.image("skyimages/snow.png", width=115)
-                    st.write(forecast)
-                    st.write(dates[i])
+                    st.write(f" {forecast} | {dates[i][0:-3]}")
                 else:
                     st.write("Weather data not available")
 
