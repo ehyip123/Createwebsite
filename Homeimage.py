@@ -30,3 +30,6 @@ def home_image():
 
 
     st.image(image_filepath, width=1000)
+    st.write(f"NASA's photo of the day: {title}")
+    with st.expander("See photo explanation"):
+        st.write(explanation)
