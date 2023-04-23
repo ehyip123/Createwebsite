@@ -9,7 +9,6 @@ st.title('SpaceY Company')
 
 home_image()
 
-st.write("Ficticious Company Webpage")
 st.subheader('Our Team')
 
 #prepare columns
